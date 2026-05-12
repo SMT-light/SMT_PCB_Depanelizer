@@ -1,0 +1,56 @@
+{
+  "productName": "S380A PCB Router Machine",
+
+  "productSubtitle": "High precision full vision PCB depaneling system designed for stable, high-speed PCB cutting in electronics manufacturing.",
+
+  "productSpecs": [
+    {
+      "title": "Cutting Accuracy",
+      "value": "±0.02mm"
+    },
+    {
+      "title": "Repeat Accuracy",
+      "value": "±0.01mm"
+    },
+    {
+      "title": "Spindle Speed",
+      "value": "20000-60000 RPM"
+    },
+    {
+      "title": "Working Size",
+      "value": "350 × 330 mm"
+    },
+    {
+      "title": "Power Supply",
+      "value": "220V / 50Hz"
+    },
+    {
+      "title": "Drive System",
+      "value": "AC Servo Motor"
+    }
+  ],
+
+  "productApplications": [
+    "PCB depaneling",
+    "Consumer electronics manufacturing",
+    "Automotive electronics",
+    "Industrial controller boards",
+    "LED PCB production",
+    "SMT & THT production lines"
+  ],
+
+  "productBenefits": [
+    "CCD full vision programming system",
+    "High precision PCB routing",
+    "Double Y working table design",
+    "Automatic tool change support",
+    "Stable industrial automation",
+    "Reduce manual cutting defects"
+  ],
+
+  "productImages": [
+    "images/s380a_1.jpg",
+    "images/s380a_2.jpg",
+    "images/s380a_3.jpg"
+  ]
+}

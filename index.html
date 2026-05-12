@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Southern Machinery - S-70LD Odd Form Machine | SMT & THT Automation Solutions" />
+  <meta name="keywords" content="SMT Machine, THT Machine, Odd Form Machine, PCB Assembly, Electronics Manufacturing" />
+  <meta name="author" content="Southern Machinery" />
+  <title>Southern Machinery | S-70LD Odd Form Machine</title>
+
+  <style>
+    :root {
+      --primary: #90C641;
+      --secondary: #0AA5A5;
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    body.dark {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --border: #1f2937;
+      --shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: 0.3s ease;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1200px, 92%);
+      margin: auto;
+    }
+
+    .topbar {
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 10px 0;
+      font-size: 13px;
+    }
+
+    .topbar-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.75);
+      border-bottom: 1px solid var(--border);
+    }
+
+    body.dark header {
+      background: rgba(15,23,42,0.85);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      gap: 20px;
+    }
+
+    .logo img {
+      height: 52px;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .toggle {
+      border: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      background: var(--card);
+      color: var(--text);
+      box-shadow: var(--shadow);
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 80px 0 60px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(2.5rem,5vw,4rem);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .hero-text h1 span {
+      color: var(--primary);
+    }
+
+    .hero-text p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg,var(--primary),var(--secondary));
+      color: white;
+    }
+
+    .btn-outline {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero-image {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-image img {
+      border-radius: 18px;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      margin-bottom: 36px;
+      max-width: 800px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 22px;
+    }
+
+    .gallery-grid img {
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      height: 240px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 24px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .spec-value {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .list-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap: 20px;
+    }
+
+    .list-item {
+      background: var(--card);
+      padding: 22px;
+      border-radius: 18px;
+      border-left: 5px solid var(--primary);
+      box-shadow: var(--shadow);
+    }
+
+    .upload-section {
+      background: linear-gradient(135deg, rgba(144,198,65,0.08), rgba(10,165,165,0.08));
+      border-radius: 30px;
+      padding: 40px;
+    }
+
+    .upload-box {
+      border: 2px dashed var(--primary);
+      border-radius: 18px;
+      padding: 40px;
+      text-align: center;
+      background: var(--card);
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .upload-box.dragover {
+      background: rgba(144,198,65,0.08);
+    }
+
+    .upload-actions {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    input[type="file"],
+    textarea,
+    input,
+    select {
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      margin-top: 10px;
+    }
+
+    .preview-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+      gap: 18px;
+    }
+
+    .preview-grid img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+
+    .pdf-list {
+      margin-top: 20px;
+      color: var(--muted);
+    }
+
+    .faq-item {
+      background: var(--card);
+      margin-bottom: 16px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .faq-question {
+      width: 100%;
+      border: none;
+      background: transparent;
+      color: var(--text);
+      text-align: left;
+      padding: 22px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 22px 22px;
+      color: var(--muted);
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .inquiry-form {
+      display: grid;
+      gap: 16px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      gap: 16px;
+    }
+
+    .submit-btn {
+      border: none;
+      padding: 16px;
+      border-radius: 14px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      background: linear-gradient(90deg,var(--primary),var(--secondary));
+      color: white;
+    }
+
+    footer {
+      background: #0b1220;
+      color: white;
+      padding: 60px 0 40px;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 30px;
+    }
+
+    .footer-links a {
+      display: block;
+      margin-bottom: 10px;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(144,198,65,0.15);
+      color: var(--primary);
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding-top: 40px;
+      }
+
+      .upload-section {
+        padding: 24px;
+      }
+
+      .topbar-content {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-content">
+      <span>Your Trusted Partner for SMT & THT Solutions</span>
+      <span>Phone/WhatsApp: +8613602562576</span>
+      <span>Email: info@SMThelp.com</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="logo" href="https://www.SMThelp.com" target="_blank">
+        <img src="https://ph.smthelp.com/images/2024/06/26/Southern-Machinery-logo-300x83.png" alt="Southern Machinery Logo">
+      </a>
+
+      <div class="nav-right">
+        <a href="#inquiry" class="btn btn-primary">Get Quote</a>
+        <button class="toggle" id="themeToggle">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-text">
+          <div class="badge">Industrial Automation • SMT & THT Solutions</div>
+          <h1 id="productName"></h1>
+          <p id="productSubtitle"></p>
+
+          <div class="cta-group">
+            <a href="#inquiry" class="btn btn-primary">Get Quote</a>
+            <a href="#gallery" class="btn btn-outline">View Machine</a>
+            <a href="#upload" class="btn btn-outline">Upload Requirement</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img id="heroImage" src="" alt="Machine Image">
+        </div>
+
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Product Gallery</h2>
+        <p class="section-subtitle">
+          Explore machine structure, insertion mechanism, PCB handling system, and production-ready configurations.
+        </p>
+
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Quick Specifications</h2>
+        <p class="section-subtitle">
+          Key performance data designed for stable production, higher throughput, and labor reduction.
+        </p>
+
+        <div class="card-grid" id="specGrid"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Typical Applications</h2>
+        <div class="list-grid" id="applicationsGrid"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Why Choose This Machine</h2>
+        <div class="list-grid" id="benefitsGrid"></div>
+      </div>
+    </section>
+
+    <section id="upload">
+      <div class="container">
+        <div class="upload-section">
+          <h2 class="section-title">Upload Your Catalog / Product Images / URLs</h2>
+          <p class="section-subtitle">
+            Upload your product catalog, PCB photos, production layout, or paste machine URLs for faster engineering review.
+          </p>
+
+          <div class="upload-box" id="dropArea">
+            <p><strong>Drag & Drop Images / PDFs Here</strong></p>
+            <p>or click to select multiple files</p>
+            <input type="file" id="fileInput" multiple hidden accept="image/*,.pdf">
+          </div>
+
+          <div class="upload-actions">
+            <textarea id="urlInput" rows="5" placeholder="Paste multiple product URLs here..."></textarea>
+            <button class="btn btn-primary" id="clearBtn">Clear All</button>
+          </div>
+
+          <div class="preview-grid" id="previewGrid"></div>
+          <div class="pdf-list" id="pdfList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question">Can this machine integrate into existing SMT/THT production lines?</button>
+          <div class="faq-answer">
+            Yes. The system supports flexible integration with conveyor systems, inline automation, and customized PCB handling configurations.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can Southern Machinery provide installation and training?</button>
+          <div class="faq-answer">
+            Yes. We provide remote guidance, video support, engineering consultation, and overseas technical assistance depending on project requirements.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I request machine videos and production references?</button>
+          <div class="faq-answer">
+            Absolutely. Contact us to request operation videos, layout references, sample testing, and machine configuration recommendations.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Do you support custom fixtures and tooling?</button>
+          <div class="faq-answer">
+            Yes. Southern Machinery supports customized feeders, tooling, PCB fixtures, and production optimization solutions.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="inquiry">
+      <div class="container">
+        <h2 class="section-title">Request Information</h2>
+        <p class="section-subtitle">
+          Submit your PCB assembly requirement and our engineering team will recommend the most suitable solution.
+        </p>
+
+        <form class="inquiry-form">
+
+          <div class="form-grid">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Business Email">
+          </div>
+
+          <div class="form-grid">
+            <input type="text" placeholder="Company Name">
+            <input type="text" placeholder="Country / Region">
+          </div>
+
+          <select>
+            <option>Select Inquiry Type</option>
+            <option>Get Quote</option>
+            <option>Ask for Video</option>
+            <option>Request Layout</option>
+            <option>Machine Catalog</option>
+            <option>Technical Consultation</option>
+          </select>
+
+          <textarea rows="6" placeholder="Tell us about your PCB, production requirement, throughput target, or machine inquiry..."></textarea>
+
+          <button type="submit" class="submit-btn">Submit Inquiry</button>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <img src="https://ph.smthelp.com/images/2024/06/26/Southern-Machinery-logo-300x83.png" alt="Southern Machinery" style="height:60px;margin-bottom:20px;">
+          <p>Your Trusted Partner for SMT & THT Solutions</p>
+          <p style="margin-top:12px;">
+            Southern Machinery – Shaping the Future of Electronics Manufacturing.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3 style="margin-bottom:16px;">Contact</h3>
+          <a href="https://www.SMThelp.com" target="_blank">www.SMThelp.com</a>
+          <a href="mailto:info@SMThelp.com">info@SMThelp.com</a>
+          <a href="https://file.autoinsertion.com" target="_blank">Machine Catalog</a>
+          <a href="https://ph.smthelp.com" target="_blank">Machine Photos</a>
+          <a href="tel:+8613602562576">+8613602562576</a>
+        </div>
+
+        <div class="footer-links">
+          <h3 style="margin-bottom:16px;">Social Media</h3>
+          <a href="https://www.linkedin.com/company/smtmachine" target="_blank">LinkedIn Company</a>
+          <a href="https://cn.linkedin.com/in/smtsupplier" target="_blank">LinkedIn Profile</a>
+          <a href="https://twitter.com/smtspecialist" target="_blank">Twitter / X</a>
+          <a href="https://www.facebook.com/autoinsertion" target="_blank">Facebook</a>
+          <a href="https://www.youtube.com/c/Smthelping" target="_blank">YouTube</a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+//
+// JSON Product Loader
+//
+
+const params = new URLSearchParams(window.location.search);
+
+const product =
+  params.get("product") || "s380a";
+
+fetch("products/" + product + ".json")
+
+  .then(res => res.json())
+
+  .then(data => {
+
+    // Product Title
+    document.title =
+      "Southern Machinery | " + data.productName;
+
+    document.getElementById("productName").innerHTML =
+      `<span>${data.productName}</span>`;
+
+    // Subtitle
+    document.getElementById("productSubtitle").textContent =
+      data.productSubtitle;
+
+    // Hero Image
+    document.getElementById("heroImage").src =
+      data.productImages[0];
+
+    //
+    // Gallery
+    //
+
+    const galleryGrid =
+      document.getElementById("galleryGrid");
+
+    galleryGrid.innerHTML = "";
+
+    data.productImages.forEach(img => {
+
+      const image =
+        document.createElement("img");
+
+      image.src = img;
+
+      galleryGrid.appendChild(image);
+
+    });
+
+    //
+    // Specs
+    //
+
+    const specGrid =
+      document.getElementById("specGrid");
+
+    specGrid.innerHTML = "";
+
+    data.productSpecs.forEach(spec => {
+
+      const card =
+        document.createElement("div");
+
+      card.className = "card";
+
+      card.innerHTML = `
+        <h3>${spec.title}</h3>
+        <div class="spec-value">${spec.value}</div>
+      `;
+
+      specGrid.appendChild(card);
+
+    });
+
+    //
+    // Applications
+    //
+
+    const applicationsGrid =
+      document.getElementById("applicationsGrid");
+
+    applicationsGrid.innerHTML = "";
+
+    data.productApplications.forEach(item => {
+
+      const div =
+        document.createElement("div");
+
+      div.className = "list-item";
+
+      div.innerHTML = `<h3>${item}</h3>`;
+
+      applicationsGrid.appendChild(div);
+
+    });
+
+    //
+    // Benefits
+    //
+
+    const benefitsGrid =
+      document.getElementById("benefitsGrid");
+
+    benefitsGrid.innerHTML = "";
+
+    data.productBenefits.forEach(item => {
+
+      const div =
+        document.createElement("div");
+
+      div.className = "list-item";
+
+      div.innerHTML = `<h3>${item}</h3>`;
+
+      benefitsGrid.appendChild(div);
+
+    });
+
+  });
+    // ============================
+    // Dark / Light Mode
+    // ============================
+
+    const themeToggle = document.getElementById("themeToggle");
+
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+
+      if (document.body.classList.contains("dark")) {
+        themeToggle.textContent = "☀️";
+      } else {
+        themeToggle.textContent = "🌙";
+      }
+    });
+
+    // ============================
+    // FAQ Accordion
+    // ============================
+
+    document.querySelectorAll(".faq-question").forEach(button => {
+      button.addEventListener("click", () => {
+        button.parentElement.classList.toggle("active");
+      });
+    });
+
+    // ============================
+    // Upload & Preview
+    // ============================
+
+    const dropArea = document.getElementById("dropArea");
+    const fileInput = document.getElementById("fileInput");
+    const previewGrid = document.getElementById("previewGrid");
+    const pdfList = document.getElementById("pdfList");
+    const clearBtn = document.getElementById("clearBtn");
+    const urlInput = document.getElementById("urlInput");
+
+    dropArea.addEventListener("click", () => fileInput.click());
+
+    ["dragenter", "dragover"].forEach(eventName => {
+      dropArea.addEventListener(eventName, e => {
+        e.preventDefault();
+        dropArea.classList.add("dragover");
+      });
+    });
+
+    ["dragleave", "drop"].forEach(eventName => {
+      dropArea.addEventListener(eventName, e => {
+        e.preventDefault();
+        dropArea.classList.remove("dragover");
+      });
+    });
+
+    dropArea.addEventListener("drop", e => {
+      handleFiles(e.dataTransfer.files);
+    });
+
+    fileInput.addEventListener("change", e => {
+      handleFiles(e.target.files);
+    });
+
+    function handleFiles(files) {
+
+      [...files].forEach(file => {
+
+        if (file.type.startsWith("image/")) {
+
+          const reader = new FileReader();
+
+          reader.onload = function(event) {
+            const img = document.createElement("img");
+            img.src = event.target.result;
+            previewGrid.appendChild(img);
+          };
+
+          reader.readAsDataURL(file);
+
+        } else if (file.type === "application/pdf") {
+
+          const p = document.createElement("p");
+          p.textContent = "PDF: " + file.name;
+          pdfList.appendChild(p);
+
+        }
+
+      });
+
+    }
+
+    clearBtn.addEventListener("click", () => {
+      previewGrid.innerHTML = "";
+      pdfList.innerHTML = "";
+      urlInput.value = "";
+      fileInput.value = "";
+    });
+
+  </script>
+
+</body>
+</html>
