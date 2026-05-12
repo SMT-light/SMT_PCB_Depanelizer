@@ -1,0 +1,82 @@
+{
+  "productName": "SC-900 Multi-Blades V-cut PCB Separator",
+
+  "productSubtitle": "Automatic Multi-Blades PCB Depaneling System for High Efficiency SMT Production",
+
+  "productSpecs": [
+    {
+      "title": "Machine Size",
+      "value": "1850 × 900 × 1100 mm"
+    },
+    {
+      "title": "Blade Size",
+      "value": "φ80 × φ35 × 3 mm"
+    },
+    {
+      "title": "Blade Material",
+      "value": "Imported SKD11 High Speed Steel"
+    },
+    {
+      "title": "Blade Brand",
+      "value": "Chuan Yi"
+    },
+    {
+      "title": "Board Thickness",
+      "value": "0.5 – 3 mm"
+    },
+    {
+      "title": "Board Length",
+      "value": "50 mm – Unlimited"
+    },
+    {
+      "title": "Board Width",
+      "value": "50 – 300 mm"
+    },
+    {
+      "title": "Board Speed",
+      "value": "300 – 500 mm/s Adjustable"
+    },
+    {
+      "title": "Working Voltage",
+      "value": "220V / 110V Optional"
+    },
+    {
+      "title": "Working Pressure",
+      "value": "0.5 – 0.8 MPa"
+    },
+    {
+      "title": "Equipment Power",
+      "value": "200W"
+    },
+    {
+      "title": "Machine Weight",
+      "value": "Approx. 160 KG"
+    }
+  ],
+
+  "productApplications": [
+    "SMT PCB Depaneling",
+    "V-cut PCB Separation",
+    "Automated PCB Production Line",
+    "Consumer Electronics",
+    "Industrial Electronics",
+    "LED PCB Processing"
+  ],
+
+  "productBenefits": [
+    "Automatic board feeding and cutting",
+    "Low cutting stress and high positioning accuracy",
+    "Supports SMEMA interface connection",
+    "Can connect with upper and lower loaders",
+    "High efficiency unmanned production",
+    "Simple operation and reduced labor cost",
+    "Door open protection safety system",
+    "Compact structure saves factory space"
+  ],
+
+  "productImages": [
+    "images/sc900_1.png",
+    "images/sc900_2.png",
+    "images/sc900_3.png"
+  ]
+}
